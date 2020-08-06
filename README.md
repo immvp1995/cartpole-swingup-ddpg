@@ -12,6 +12,14 @@ off-policy actor-critic named “Deep Deterministic Policy Gradient” (DDPG), w
 
 In this work we apply DDPG to solve the cartpole swing-up problem.
 
+# Background
+
+# Environment
+
+# Algorithm
+
+# Results 
+
 # References
 [1] V. Mnih et al., “Playing Atari with deep reinforcement learning” in NIPS Deep Learning Workshop 2013, 2013.
 

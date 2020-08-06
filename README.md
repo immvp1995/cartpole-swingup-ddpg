@@ -14,10 +14,19 @@ In this work we apply DDPG to solve the cartpole swing-up problem.
 
 # Background
 The standard setup of reinforcement learning consists of an agent that interacts with 
-the environment by selecting actions over a sequence of time in order to maximize a cumulative reward. The environment 
-may be stochastic. Therefore, we model ths as a finite Markov Decision Process (MDP) that comprises of a state space S, 
-and action space A, an initial distribution with density, a stationary transition dynamics distribution with conditional 
-density that satisfies the Markov Property and a reward function which maps a state-action pair to a scalar [2] [5].
+the environment <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;\varepsilon" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;\varepsilon" title="\varepsilon" /></a> by selecting actions over a sequence of time in order to maximize a cumulative reward. The environment 
+may be stochastic. Therefore, we model this as a finite Markov Decision Process (MDP) that comprises of a state space <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;S" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;S" title="S" /></a>, 
+and action space <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;A" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;A" title="A" /></a>, an initial distribution <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;p_1(s_1)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;\small&space;p_1(s_1)" title="p_1(s_1)" /></a>, a stationary transition dynamics distribution with conditional density 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;p(s_{t&plus;1}|s_t,&space;a_t)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;\small&space;p(s_{t&plus;1}|s_t,&space;a_t)" title="p(s_{t+1}|s_t, a_t)" /></a>
+that satisfies the Markov Property <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;\small&space;p(s_{t&plus;1}|s_1,&space;a_1,&space;...,&space;s_t,&space;a_t)=p(s_{t&plus;1}|s_t,&space;a_t)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;\small&space;p(s_{t&plus;1}|s_1,&space;a_1,&space;...,&space;s_t,&space;a_t)=p(s_{t&plus;1}|s_t,&space;a_t)" title="\small p(s_{t+1}|s_1, a_1, ..., s_t, a_t)=p(s_{t+1}|s_t, a_t)" /></a> and a reward function <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\dpi{100}&space;\bg_white&space;\small&space;r(s_t,&space;a_t)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\dpi{100}&space;\bg_white&space;\small&space;r(s_t,&space;a_t)" title="\small r(s_t, a_t)" /></a>
+which maps a state-action pair to a scalar [2] [5].
+
+In general, the agent follows a stochastic policy
+that maps a state to a set of probability measures on A. The agent uses
+to interact with the MDP to generate trajectories of states, action and rewards. In each step these rewards are discounted by a factor
+such that the future discounted return at time t can be defined as
+. The goal of the agent is to learn a policy that maximizes the expected return from the start distribution
+[2][5].
 
 # Environment
 

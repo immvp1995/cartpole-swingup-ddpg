@@ -1,3 +1,3 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
 title: Deep Deterministic Policy Gradient in Action!
 description: Solving the cart pole swing-up problem using Reinforcement Learning.

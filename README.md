@@ -1,4 +1,5 @@
 # Introduction
+<div style="text-align: justified">
 In recent years, researchers in the field of artificial intelligence have made substantial progress in solving 
 high-dimensional complex tasks using large, non-linear function approximators to learn value or action-value functions. 
 
@@ -11,6 +12,7 @@ off-policy actor-critic named “Deep Deterministic Policy Gradient” (DDPG), w
 “Deterministic Policy Gradients” (DPG) by Silver et al. and can operate in continuous action spaces [1] [2] [3].
 
 In this work we apply DDPG to solve the cartpole swing-up problem.
+</div>
 
 # Background
 The standard setup of reinforcement learning consists of an agent that interacts with 

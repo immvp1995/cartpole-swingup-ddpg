@@ -13,7 +13,7 @@ off-policy actor-critic named “Deep Deterministic Policy Gradient” (DDPG), w
 In this work we apply DDPG to solve the cartpole swing-up problem.
 
 # Background
-<div style="text-align: justify"> The standard setup of reinforcement learning consists of an agent that interacts with 
+The standard setup of reinforcement learning consists of an agent that interacts with 
 the environment by selecting actions over a sequence of time in order to maximize a cumulative reward. The environment 
 may be stochastic. Therefore, we model this as a finite Markov decision process (MDP) that comprises of a state space 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_phv&space;\small&space;S" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_phv&space;\small&space;S" title="\small S" /></a>,  
@@ -23,7 +23,6 @@ a stationary transition dynamics distribution with conditional density <a href="
 that satisfies the Markov property <a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_phv&space;\small&space;p(s_{t&plus;1}|s_1,&space;a_1,&space;...,&space;s_t,&space;a_t)=p(s_{t&plus;1}|s_t,&space;a_t)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_phv&space;\small&space;p(s_{t&plus;1}|s_1,&space;a_1,&space;...,&space;s_t,&space;a_t)=p(s_{t&plus;1}|s_t,&space;a_t)" title="\small p(s_{t+1}|s_1, a_1, ..., s_t, a_t)=p(s_{t+1}|s_t, a_t)" /></a> 
 and a reward function <a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_phv&space;\small&space;r(s_t,&space;a_t)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_phv&space;\small&space;r(s_t,&space;a_t)" title="\small r(s_t, a_t)" /></a> 
 which maps a state-action pair to a scalar [2] [5].
-</div>
 
 # Environment
 

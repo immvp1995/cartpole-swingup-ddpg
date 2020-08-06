@@ -13,7 +13,7 @@ off-policy actor-critic named “Deep Deterministic Policy Gradient” (DDPG), w
 In this work we apply DDPG to solve the cartpole swing-up problem.
 
 # Background
-<div style="text-align: right"> The standard setup of reinforcement learning consists of an agent that interacts with 
+<div style="text-align: justify"> The standard setup of reinforcement learning consists of an agent that interacts with 
 the environment by selecting actions over a sequence of time in order to maximize a cumulative reward. The environment 
 may be stochastic. Therefore, we model this as a finite Markov decision process (MDP) that comprises of a state space 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_phv&space;\small&space;S" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_phv&space;\small&space;S" title="\small S" /></a>,  

@@ -14,7 +14,8 @@ In this work we apply DDPG to solve the cartpole swing-up problem.
 
 # Background
 The standard setup of reinforcement learning consists of an agent that interacts with the environment 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_cs&space;\varepsilon" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_cs&space;\varepsilon" title="\varepsilon" /></a> by selecting actions over a sequence of time in order to maximize a cumulative reward.
+<a href="https://www.codecogs.com/eqnedit.php?latex=\bg_white&space;\fn_phv&space;\varepsilon" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\bg_white&space;\fn_phv&space;\varepsilon" title="\varepsilon" /></a>
+ by selecting actions over a sequence of time in order to maximize a cumulative reward.
 
 # Environment
 
